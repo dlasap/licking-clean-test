@@ -47,8 +47,8 @@ const ProviderPage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center relative">
-      <div className="absolute top-2 left-2">
+    <div className="flex flex-col items-center justify-center">
+      <div className="fixed left-[2px] top-[2px] z-100">
         <Button onClick={() => router.back()}>
           <ArrowLeftIcon />
           Back

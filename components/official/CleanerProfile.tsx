@@ -58,16 +58,16 @@ export default function CleanerProfile({ provider }: CleanerProfileProps) {
   const [isBooking, setIsBooking] = useState(false)
   const [openBookingSuccess, setOpenBookingSuccess] = useState(false)
   const [isAsc, setIsAsc] = useState(false)
-  const [error, setError] = useState("")
+  const [error, setError] = useState('')
 
   async function handleBook() {
     setIsBooking(true)
     const { error } = await createBooking(provider.id)
     if (!error) {
       setOpenBookingSuccess(true)
-      setError("")
+      setError('')
     } else {
-      setError("Sorry, something went wrong.")
+      setError('Sorry, something went wrong.')
       console.error(error)
     }
     setIsBooking(false)

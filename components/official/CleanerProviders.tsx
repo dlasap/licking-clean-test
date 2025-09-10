@@ -40,7 +40,7 @@ export default function CleanerProviders() {
                 href={`/provider/${provider.id}`}
                 className="p-4 rounded-xl border bg-card hover:shadow-md transition"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 md:flex-row flex-col">
                   <Avatar className="size-16">
                     <AvatarImage
                       src={'./smiling-lady.jpg'}
@@ -49,19 +49,19 @@ export default function CleanerProviders() {
                     <AvatarFallback>{provider.name.slice(0, 2)}</AvatarFallback>
                   </Avatar>
                   <div className="flex-1">
-                    <h2 className="text-2xl font-heading text-primary">
+                    <h2 className="text-2xl font-heading text-primary flex gap-2">
                       {provider.name}
+                      <Badge
+                        className="text-stone-900 flex items-center gap-1 border border-secondary"
+                        style={{ backgroundColor: '#F5E050' }}
+                      >
+                        <Sparkles className="size-3" /> Top Rated
+                      </Badge>
                     </h2>
-                    <p className="text-xs text-muted-foreground my-2">
+                    <p className="text-xs text-muted-foreground my-2 tracking-wider">
                       {provider.bio}
                     </p>
                   </div>
-                  <Badge
-                    className="text-stone-900 flex items-center gap-1"
-                    style={{ backgroundColor: '#F5E050' }}
-                  >
-                    <Sparkles className="size-3.5" /> Top Rated
-                  </Badge>
                 </div>
               </Link>
             ))}
