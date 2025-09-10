@@ -14,3 +14,8 @@ Set env vars on Vercel:
 
 - NEXT_PUBLIC_SUPABASE_URL
 - NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+
+## AppSmith
+
+- Connected via Pooler 

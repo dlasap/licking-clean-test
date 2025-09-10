@@ -55,9 +55,6 @@ export default function CleanerProviders() {
                     <p className="text-xs text-muted-foreground my-2">
                       {provider.bio}
                     </p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {provider.rating}
-                    </p>
                   </div>
                   <Badge
                     className="text-stone-900 flex items-center gap-1"
