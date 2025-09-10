@@ -21,7 +21,7 @@ npm install
 ### 2. Configure environment variables  
 Copy the example file and update with your Supabase credentials:  
 ```bash
-cp .env.local.example .env.local
+cp env.local.example .env.local
 ```  
 
 Inside `.env.local` set:  
@@ -58,7 +58,6 @@ Visit [http://localhost:3000](http://localhost:3000)
   - View `providers` table (name, bio)  
   - Edit provider bio → updates Supabase in real time  
 - Connection type: **Postgres via Supabase connection pooler**  
-- Import the Appsmith app JSON or use the provided workspace link.  
 
 ---
 
